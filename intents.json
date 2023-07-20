@@ -1,0 +1,32 @@
+{"intents" :[
+    {
+        "tag": "greetings",
+        "patterns": ["Hi", "Hello", "Hey"],
+        "responses": ["Hello!", "Hi there!", "Hey!"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "Goodbye", "See you later"],
+        "responses": ["Goodbye!", "See you later!", "Take care!"]
+      },
+    {"tag": "Sthapatya",
+    "patterns": ["Sthapatya", "What is Sthapatya", "What Sthapatya"],
+    "Responses": ["Sthapatya is a Consultancy Service Provider.", "- Provide 24/7 Online and Offline Support for all our products.", "- Timely Tested & Heartly Trusted from 20+ Years.", "- 20+ Years of Core domain experience in Property Tax Assessment.", "- We offers various kind of android application they support to Fast survey and Tax Collection.", "We have 20+ Years of Core domain experience in Property Tax Assessment. we use GIS technology for referencing MIS activities in Property tax Department, We offer various kind of android applications for Fast survey and Tax Collection. we Provide end to end Software Service and support for Property survey and Tax Assessment."]
+},
+    {"tag":"Contact",
+    "patterns":["Contact", "how can I contact you", "how can I talk with your superviser", "how can I talk with your owner"],
+    "Responses":["You Can Call us on 7774091416. Or you can Mail us at sthapatyaconsultants@gmail.com"]
+},
+    {"tag":"hours",
+    "patterns":["When are you guys open", "when can I call you", "What are your Visiting Hours?", "When Can I visit your office?"],
+    "Responses":["We are avaliable 24*7. You can call us anytime! However our Visiting Hours are 11am to 7pm"]
+},
+    {"tag":"Locations", 
+    "patterns":["Where are your offices located", "Where is your office in Pune", "Where is your office in Amaravati", "Where is your office in Panvel", "How many offices do you have?", "How to reach Pune Office?", "How to reach Amaravati Office?"],
+    "Responses":["We Currently have 2 offices, Main office is in Amaravati and other is in Pune. The respective addresses are Amravati Office :-4, Swapnashri Colony, Siddhivinayak Nagar,Ashiyad Square, Shegaon Road, Amravati,Maharashtra 444604 ,India and \nPune Office :- 303,3rd floor,18 high street,baner pashan link road, baner,Pune, Maharashtra 411045, India"]
+},
+    {"tag":"services",
+    "patterns":["What serveces do you provide?"],
+    "Responses":["We Provede PROPERTY SURVEY & TAX ASSESSMENT, SOFTWARE DEVELOPMENT, APP DEVELOPMENT, SUPPORT, SECURITY ASSESSMENT"]
+}
+]}
