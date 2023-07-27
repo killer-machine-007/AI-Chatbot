@@ -21,17 +21,7 @@
       "tag": "services",
       "patterns": ["what services do you provide", "tell me about your services", "services offered"],
       "responses": [
-        "At Sthapatya Consultants (I) Pvt. Ltd., we provide a range of services:",
-        "- Property Survey & Tax Assessment",
-        "- Tax Collection",
-        "- Software Development",
-        "- Android Application Development",
-        "- GIS (Geographic Information System)",
-        "- IT Security Assessment",
-        "- Application Security",
-        "- Mobile Application Security",
-        "- Network Security",
-        "- Audit Compliance"
+        "At Sthapatya Consultants (I) Pvt. Ltd., we provide a range of services:\n- Property Survey & Tax Assessment\n- Tax Collection\n- Software Development\n- Android Application Development\n- GIS (Geographic Information System)\n- IT Security Assessment\n- Application Security\n- Mobile Application Security\n- Network Security\n- Audit Compliance"
       ]
     },
     {

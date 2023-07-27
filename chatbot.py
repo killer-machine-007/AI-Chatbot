@@ -1,14 +1,15 @@
-import random, json, pickle, time, numpy as np, nltk
+import random, json, pickle, numpy as np, nltk
 from nltk.stem import WordNetLemmatizer
 nltk.download('wordnet')
 from tensorflow.keras.models import load_model
+import time
 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
 
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
-model = load_model('chatbot_model.h5')
+model = load_model('chatbot_model.h5')  # Use 'chatbot_model.h5' instead of 'chatbot_model.model'
 
 def clean_up_sentences(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -41,19 +42,7 @@ def get_response(intents_list, intents_json):
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
         if i['tag'] == tag:
-            if i['tag'] == 'services':
-                # Concatenate all responses for 'services' intent
-                result = '\n'.join(i['responses'])
-            elif 'pune' in message and i['tag'] == 'locations':
-                # Handle query for Pune office address
-                result = [response for response in i['responses'] if 'pune' in response.lower()]
-                result = '\n'.join(result)
-            elif 'amaravati' in message and i['tag'] == 'locations':
-                # Handle query for Amaravati office address
-                result = [response for response in i['responses'] if 'amaravati' in response.lower()]
-                result = '\n'.join(result)
-            else:
-                result = random.choice(i['responses'])
+            result = random.choice(i['responses'])
             break
     return result
 
@@ -92,4 +81,7 @@ while True:
     if intent['intent'] == 'greetings':
         print(get_greeting())
     else:
-        print(res)
+        for char in res:
+            print(char, end='', flush=True)  # Print each character with flush=True to ensure immediate display
+            time.sleep(0.03)  # Add a delay of 0.03 seconds for each character
+        print()  # Print a new line after the response is complete
