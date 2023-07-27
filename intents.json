@@ -1,30 +1,80 @@
-{"intents" :[
-    {"tag": "greetings",
-    "patterns": ["Hi", "Hello", "Hey"],
-    "Responses": ["Hello!", "Hi there!", "Hey!"]
-},
-    {"tag": "goodbye",
-    "patterns": ["Bye", "Goodbye", "See you later"],
-    "Responses": ["Goodbye!", "See you later!", "Take care!"]
-},
-    {"tag": "Sthapatya",
-    "patterns": ["Sthapatya", "What is Sthapatya", "What Sthapatya"],
-    "Responses": ["Sthapatya is a Consultancy Service Provider.", "- Provide 24/7 Online and Offline Support for all our products.", "- Timely Tested & Heartly Trusted from 20+ Years.", "- 20+ Years of Core domain experience in Property Tax Assessment.", "- We offers various kind of android application they support to Fast survey and Tax Collection.", "We have 20+ Years of Core domain experience in Property Tax Assessment. we use GIS technology for referencing MIS activities in Property tax Department, We offer various kind of android applications for Fast survey and Tax Collection. we Provide end to end Software Service and support for Property survey and Tax Assessment."]
-},
-    {"tag":"Contact",
-    "patterns":["Contact", "how can I contact you", "how can I talk with your superviser", "how can I talk with your owner"],
-    "Responses":["You Can Call us on 7774091416. Or you can Mail us at sthapatyaconsultants@gmail.com"]
-},
-    {"tag":"hours",
-    "patterns":["When are you guys open", "when can I call you", "What are your Visiting Hours?", "When Can I visit your office?"],
-    "Responses":["We are avaliable 24*7. You can call us anytime! However our Visiting Hours are 11am to 7pm"]
-},
-    {"tag":"Locations", 
-    "patterns":["Where are your offices located", "Where is your office in Pune", "Where is your office in Amaravati", "Where is your office in Panvel", "How many offices do you have?", "How to reach Pune Office?", "How to reach Amaravati Office?"],
-    "Responses":["We Currently have 2 offices, Main office is in Amaravati and other is in Pune. The respective addresses are Amravati Office :-4, Swapnashri Colony, Siddhivinayak Nagar,Ashiyad Square, Shegaon Road, Amravati,Maharashtra 444604 ,India and \nPune Office :- 303,3rd floor,18 high street,baner pashan link road, baner,Pune, Maharashtra 411045, India"]
-},
-    {"tag":"services",
-    "patterns":["What serveces do you provide?"],
-    "Responses":["We Provede PROPERTY SURVEY & TAX ASSESSMENT, SOFTWARE DEVELOPMENT, APP DEVELOPMENT, SUPPORT, SECURITY ASSESSMENT"]
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": ["hi", "hello", "hey", "hi there", "greetings", "what's up", "good morning", "good afternoon"],
+      "responses": ["Hello!", "Hi there!", "Hey!", "Greetings!", "Hey, how can I assist you today?", "Good morning! How can I help?", "Good afternoon! What can I do for you?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later", "take care", "see ya", "farewell"],
+      "responses": ["Goodbye!", "See you later!", "Take care! Have a great day!", "Farewell!"]
+    },
+    {
+      "tag": "about",
+      "patterns": ["about company", "consultancy service provider", "company information", "about your company"],
+      "responses": [
+        "Sthapatya Software Private Limited is a Private incorporated on 08 March 2016.\nIt is classified as a Non-govt company and is registered at Registrar of Companies, Mumbai.\nThe company's authorized share capital is Rs. 100,000 and its paid-up capital is Rs. 100,000.\nSthapatya Software Private Limited is primarily involved in Software publishing, consultancy, and supply.\nSoftware publishing includes production, supply, and documentation of ready-made (non-customized) software, operating systems software, business & other applications software, computer games software for all platforms.\nConsultancy includes providing the best solution in the form of custom software after analyzing the user's needs and problems.\nCustom software also includes made-to-order software based on orders from specific users. Also, included are writing of software of any kind following directives of the users; software maintenance, web-page design.\nThe company's Annual General Meeting (AGM) was last held on 30 September 2022, and its balance sheet was last filed on 31 March 2022.\nThe Directors of Sthapatya Software Private Limited are Prashant Ramdas Doifode and Suraj Digambar Mandlik.\nSthapatya Software Private Limited's Corporate Identification Number is (CIN) U72200MH2016PTC274063 and its registration number is 274063.\nIts Email address is sthapatyaconsultants@gmail.com, and its registered address is 4B, Saitirth Apartment, Abhinav Colony, Shegaon Road, Amravati, Maharashtra 444603, India.\nThe current status of Sthapatya Software Private Limited is - Active."
+      ]
+    },
+    {
+      "tag": "services",
+      "patterns": ["what services do you provide", "tell me about your services", "services offered"],
+      "responses": [
+        "At Sthapatya Consultants (I) Pvt. Ltd., we provide a range of services:",
+        "- Property Survey & Tax Assessment",
+        "- Tax Collection",
+        "- Software Development",
+        "- Android Application Development",
+        "- GIS (Geographic Information System)",
+        "- IT Security Assessment",
+        "- Application Security",
+        "- Mobile Application Security",
+        "- Network Security",
+        "- Audit Compliance"
+      ]
+    },
+    {
+      "tag": "online_portal",
+      "patterns": ["online portal links", "client portal", "client links"],
+      "responses": [
+        "Our online portal links:\n- Online Property Survey Assessment Portal\n- Real-Time Online Web Application for Property Tax Collection\n- Real-Time Online Mobile-Based Survey & Spot Collection Application\n- GIS Base Numbering & Survey Data Integration Module"
+      ]
+    },
+    {
+      "tag": "online_survey",
+      "patterns": ["online survey", "survey assessment portal"],
+      "responses": ["Explore our Online Property Survey Assessment Portal for accurate and efficient survey assessment."]
+    },
+    {
+      "tag": "online_payment",
+      "patterns": ["online payment", "property tax collection", "web application for tax collection"],
+      "responses": ["Make hassle-free online payments with our Real-Time Online Web Application for Property Tax Collection."]
+    },
+    {
+      "tag": "tax_collection_tab",
+      "patterns": ["tax collection tab", "mobile-based survey application", "spot collection application"],
+      "responses": ["Experience convenience with our Real-Time Online Mobile-Based Survey & Spot Collection Application."]
+    },
+    {
+      "tag": "smart_gis",
+      "patterns": ["smart gis", "gis numbering", "survey data integration module"],
+      "responses": ["Optimize your operations with our Smart GIS Base Numbering & Survey Data Integration Module."]
+    },
+    {
+      "tag": "contact",
+      "patterns": ["contact", "how can I contact you", "talk to supervisor", "talk to owner", "get in touch", "call", "Whom Do I call?", "number", "can you provide me a number to call"],
+      "responses": ["You can reach us at 7774091416 or email us at sthapatyaconsultants@gmail.com."]
+    },
+    {
+      "tag": "hours",
+      "patterns": ["when are you guys open", "when can I call you", "what are your visiting hours", "when can I visit your office", "office timings"],
+      "responses": ["We are available 24/7, so feel free to call us anytime!", "Our office visiting hours are from 11 am to 7 pm, Monday to Friday."]
+    },
+    {
+      "tag": "locations",
+      "patterns": ["where are your offices located", "where is your office in pune", "where is your office in amaravati", "where is your office in panvel", "how many offices do you have", "how to reach pune office", "how to reach amaravati office", "address for pune office", "address for amaravati office"],
+      "responses": ["We currently have 2 offices:", "1. Amaravati Office:", "4B, Saitirth Apartment, Abhinav Colony, Shegaon Road, Amravati, Maharashtra 444603, India", "2. Pune Office:", "303, 3rd floor, 18 high street, Baner Pashan link road, Baner, Pune, Maharashtra 411045, India"]
+    }
+  ]
 }
-]}

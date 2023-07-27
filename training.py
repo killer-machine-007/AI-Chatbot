@@ -56,19 +56,19 @@ train_x = np.array([x[0] for x in training])
 train_y = np.array([x[1] for x in training])
 
 # Pad the sequences to have the same length
-train_x = pad_sequences(train_x, padding='post')
+train_x = pad_sequences(train_x, padding='post', maxlen=len(words))
 train_y = pad_sequences(train_y, padding='post')
 
 model = Sequential()
-model.add(Dense(128, input_shape=(len(train_x[0]),), activation='relu'))
+model.add(Dense(128, input_shape=(len(words),), activation='relu'))
 model.add(Dropout(0.5))
 model.add(Dense(64, activation='relu'))
 model.add(Dropout(0.5))
-model.add(Dense(len(train_y[0]), activation='softmax'))
+model.add(Dense(len(classes), activation='softmax'))
 
 sgd = SGD(learning_rate=0.01, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
-hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
+hist = model.fit(train_x, train_y, epochs=200, batch_size=5, verbose=1)
 model.save('chatbot_model.h5', hist)
 print('Done')
