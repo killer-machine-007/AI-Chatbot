@@ -85,3 +85,5 @@ while True:
             print(char, end='', flush=True)  # Print each character with flush=True to ensure immediate display
             time.sleep(0.03)  # Add a delay of 0.03 seconds for each character
         print()  # Print a new line after the response is complete
+
+    print("> ", end="", flush=True)  # Print the prompt for the user to ask the next question
