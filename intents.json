@@ -64,7 +64,7 @@
     {
       "tag": "locations",
       "patterns": ["where are your offices located", "where is your office in pune", "where is your office in amaravati", "where is your office in panvel", "how many offices do you have", "how to reach pune office", "how to reach amaravati office", "address for pune office", "address for amaravati office"],
-      "responses": ["We currently have 2 offices:", "1. Amaravati Office:", "4B, Saitirth Apartment, Abhinav Colony, Shegaon Road, Amravati, Maharashtra 444603, India", "2. Pune Office:", "303, 3rd floor, 18 high street, Baner Pashan link road, Baner, Pune, Maharashtra 411045, India"]
+      "responses": ["We currently have 2 offices:\n- Amaravati Office:4B, Saitirth Apartment, Abhinav Colony, Shegaon Road, Amravati, Maharashtra 444603, India\n- Pune Office: 303, 3rd floor, 18 high street, Baner Pashan link road, Baner, Pune, Maharashtra 411045, India"]
     }
   ]
 }
