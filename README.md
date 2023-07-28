@@ -26,7 +26,7 @@ Sthapatya AI Chatbot is a simple conversational bot developed to provide accurat
 
 1. Clone this repository to your local machine.
 ```
-git clone https://github.com/your_username/sthapatya-ai-chatbot.git
+git clone https://github.com/killer-machine-007/AI-Chatbot.git
 cd sthapatya-ai-chatbot
 ```
 2. Install the required Python libraries.
