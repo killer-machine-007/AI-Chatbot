@@ -58,8 +58,13 @@
     },
     {
       "tag": "hours",
-      "patterns": ["when are you guys open", "when can I call you", "what are your visiting hours", "when can I visit your office", "office timings"],
-      "responses": ["We are available 24/7, so feel free to call us anytime!", "Our office visiting hours are from 11 am to 7 pm, Monday to Friday."]
+      "patterns": ["when are you guys open", "when can I call you", "when can I visit your office", "office timings"],
+      "responses": ["We are available 24/7, so feel free to call us anytime!"]
+    },
+    {
+      "tag": "visitng_hours",
+      "patterns": ["when are you guys open", "what are your visiting hours", "when can I visit your office", "office timings"],
+      "responses": [ "Our office visiting hours are from 11 am to 7 pm, Monday to Friday.\nFeel free to pay us a visit!"]
     },
     {
       "tag": "locations",

@@ -59,17 +59,13 @@ def handle_unrecognized():
 print("Bot is Running")
 
 while True:
-    message = input("").lower()
-    
+    message = input(">").lower()
     if message == "exit":
         print("Goodbye! Have a great day!")
         break
-
     if message == "":
         continue
-
     ints = predict_class(message)
-
     # Sort intents by probability and select the one with the highest confidence
     ints.sort(key=lambda x: float(x['probability']), reverse=True)
     intent = ints[0]
@@ -77,7 +73,6 @@ while True:
         res = get_response(ints, intents)
     else:
         res = handle_unrecognized()
-
     if intent['intent'] == 'greetings':
         print(get_greeting())
     else:
@@ -85,5 +80,3 @@ while True:
             print(char, end='', flush=True)  # Print each character with flush=True to ensure immediate display
             time.sleep(0.03)  # Add a delay of 0.03 seconds for each character
         print()  # Print a new line after the response is complete
-
-    print("> ", end="", flush=True)  # Print the prompt for the user to ask the next question
